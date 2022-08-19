@@ -16,33 +16,33 @@
             <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
                 <div class="bg-rose-500 p-8 rounded-xl" >
                     <h3 class="text-3xl">Deposit</h1>
-                    <h4 class="text-5xl">$00</h4>
+                    <h4 class="text-5xl">$<span id="deposit-amount" >00</span></h4>
                 </div>
                 <div class="bg-orange-500 p-8 rounded-xl" >
                     <h3 class="text-3xl">Witdraw</h1>
-                    <h4 class="text-5xl">$00</h4>
+                    <h4 class="text-5xl">$<span id="witdraw-amount">00</span></h4>
                 </div>
                 <div class="bg-green-500 p-8 rounded-xl" >
                     <h3 class="text-3xl">Balance</h1>
-                    <h4 class="text-5xl">$1240</h4>
+                    <h4  class="text-5xl">$<span id="total-amount">1240</span></h4>
                 </div>
-            </div>
+            </div>  
         </section>
         <section class="mt-14">
             <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
                 <div class="bg-teal-400 p-8 rounded-xl t">
                     <h2 class="text-3xl text-white">Please Deposit</h2>
                     <div class="container">
-                        <input class="block mt-6 w-9/12 p-2" type="text" placeholder="$ Amount you want to Deposit ">
-                        <button class=" bg-black text-white mt-4 px-4 py-2 rounded  focus:ring-4 focus:outline-none focus:ring-red-300">Deposit</button>
+                        <input id="input-deposit" class="block mt-6 w-9/12 p-2" type="text" placeholder="$ Amount you want to Deposit ">
+                        <button id="btn-deposit" class=" bg-black text-white mt-4 px-4 py-2 rounded  focus:ring-4 focus:outline-none focus:ring-red-300">Deposit</button>
 
                     </div>
                 </div>
                 <div class="bg-blue-700 p-8 rounded-xl t">
                     <h2 class="text-3xl text-white">Please witdraw</h2>
                     <div class="container">
-                        <input class="block mt-6 w-9/12 p-2" type="text" placeholder="$ Amount you want to Witdraw ">
-                        <button class=" bg-black text-white mt-4 px-4 py-2 rounded  focus:ring-4 focus:outline-none focus:ring-red-300">Deposit</button>
+                        <input id="input-witdraw" class="block mt-6 w-9/12 p-2" type="text" placeholder="$ Amount you want to Witdraw ">
+                        <button id="btn-witdraw" class=" bg-black text-white mt-4 px-4 py-2 rounded  focus:ring-4 focus:outline-none focus:ring-red-300">Deposit</button>
 
                     </div>
                 </div>
@@ -51,6 +51,7 @@
             </div>
         </section>
        </main>
-    
+    <script src="js/deposit.js"></script>
+    <script src="js/witdraw.js"></script>
 </body>
 </html>

@@ -3,6 +3,13 @@ document.getElementById('btn-witdraw').addEventListener('click', function(){
      const inputWithdrawString = inputWirdraw.value ;
      const inputWirdrawAmount = parseFloat(inputWithdrawString);
 
+     inputWirdraw.value = '';
+
+     if(isNaN(inputWirdrawAmount)){
+        alert('please provide a valid number')
+        return;
+     }
+
      const getWithdraw = document.getElementById('witdraw-amount');
      const takeWithdrawString = getWithdraw.innerText;
      const withdrawAmount = parseFloat(takeWithdrawString); 
@@ -13,8 +20,8 @@ document.getElementById('btn-witdraw').addEventListener('click', function(){
      const previousTotalString = previousTotal.innerText;
      const previousTotalAmout = parseFloat(previousTotalString);
 
-     inputWirdraw.value = '';
      
+
      if(previousTotalAmout < inputWirdrawAmount){
         alert('baper bank e ato taka nai.')
         return;
